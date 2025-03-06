@@ -1,0 +1,356 @@
+﻿<Window x:Class="Geo_worker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Geo_worker"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" Width="1920" Height="1080" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <!-- Левый блок -->
+            <ColumnDefinition Width="*"/>
+            <!-- Центральный блок -->
+            <ColumnDefinition Width="300"/>
+            <!-- Правый блок -->
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <!-- Верхний блок -->
+            <RowDefinition Height="*"/>
+            <!-- Центральный блок -->
+            <RowDefinition Height="50"/>
+            <!-- Нижний блок -->
+            <RowDefinition Height="10"/>
+            <!-- Отступ снизу -->
+        </Grid.RowDefinitions>
+
+        <!-- Левый блок -->
+        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Background="LightBlue">
+            <StackPanel VerticalAlignment="Top">
+                <!-- Первая группа кнопок -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Файл" Grid.Column="0"/>
+                    <Button Content="Инструменты" Grid.Column="1"/>
+                    <Button Content="Помощь" Grid.Column="2"/>
+                </Grid>
+
+                <!-- Вторая группа кнопок -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Нафстрока" Grid.Column="0"/>
+                    <Button Content="Дизайн" Grid.Column="1"/>
+                    <Button Content="Отчёт" Grid.Column="2"/>
+                    <Button Content="Contact" Grid.Column="3"/>
+                </Grid>
+
+                <Label  Background="White">Проект 22 (ООО Скульфк)</Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Иморт" Grid.Column="0"/>
+                    <Button Content="Эксорт" Grid.Column="1"/>
+                </Grid>
+
+
+                <Grid>
+                    <!-- TextBox для ввода -->
+                    <TextBox Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" 
+             x:Name="SearchTermTextBox" SpellCheck.IsEnabled="True" Language="ru-ru" Height="20">
+                        <TextBox.Style>
+                            <Style TargetType="TextBox">
+                                <!-- По умолчанию текст пустой -->
+                                <Setter Property="Text" Value=""/>
+                                <Style.Triggers>
+                                    <!-- Когда текст не пустой, скрыть подсказку -->
+                                    <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+
+                    <!-- Подсказка для TextBox -->
+                    <TextBlock x:Name="SearchTermTextBlock" IsHitTestVisible="False" 
+               Text="Введите поисковый запрос" VerticalAlignment="Center" HorizontalAlignment="Left" 
+               Margin="10,0,0,0" Foreground="DarkGray">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <!-- По умолчанию текст скрыт -->
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                                <Style.Triggers>
+                                    <!-- Если поле ввода пустое, показываем подсказку -->
+                                    <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Grid>
+
+
+
+
+                <StackPanel  HorizontalAlignment="Right">
+                    <StackPanel  Width="180" HorizontalAlignment="Right">
+                        <Label Background="White">dsfa</Label>
+                        <StackPanel Width="160" HorizontalAlignment="Right">
+                            <Label Background="White">dsfa</Label>
+                            <StackPanel Width="140" HorizontalAlignment="Right">
+                                <Label Background="White">dsfa</Label>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Width="140" HorizontalAlignment="Right">
+                                <Label Background="White">dsfa</Label>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                                <StackPanel Width="120" HorizontalAlignment="Right">
+                                    <Label Background="White">dsfa</Label>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+
+
+        <!-- Правый блок (на всю высоту) -->
+        <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="LightGreen">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Width="350">
+                <!-- Первая группа кнопок -->
+                <Grid Grid.Row="0" Background="White">
+                    <StackPanel VerticalAlignment="Center">
+                        <Label Content="Слои" HorizontalAlignment="Center"/>
+                        <Grid>
+                            <!-- TextBox для ввода -->
+                            <TextBox Width="350" VerticalAlignment="Center" HorizontalAlignment="Center" 
+x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height="20">
+                                <TextBox.Style>
+                                    <Style TargetType="TextBox">
+                                        <!-- По умолчанию текст пустой -->
+                                        <Setter Property="Text" Value=""/>
+                                        <Style.Triggers>
+                                            <!-- Когда текст не пустой, скрыть подсказку -->
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBox.Style>
+                            </TextBox>
+
+                            <!-- Подсказка для TextBox -->
+                            <TextBlock x:Name="SearchTermTextBlock2" IsHitTestVisible="False" 
+  Text="Введите поисковый запрос" VerticalAlignment="Center" HorizontalAlignment="Left" 
+  Margin="10,0,0,0" Foreground="DarkGray">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <!-- По умолчанию текст скрыт -->
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <!-- Если поле ввода пустое, показываем подсказку -->
+                                            <DataTrigger Binding="{Binding Text, ElementName=SearchTermTextBox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+
+                <Border BorderThickness="2" BorderBrush="Black" Width="350">
+                    <StackPanel>
+                        
+                    <Grid Grid.Row="1" Background="LightGray">
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Название слоя -->
+                        <Label Content="Слой 1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+                        <!-- Изображение -->
+                        <Image Source="/1.jpg" Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
+
+                        <!-- Кнопки -->
+                        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                            <Button Width="30" Height="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/lock.png"/>
+                                </Button.Background>
+                            </Button>
+                            <Button Width="30" Height="30" Margin="0,5,0,0">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/eye.png"/>
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                        
+                </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Грфик" Grid.Column="0"/>
+                            <Button Content="Пикет" Grid.Column="1"/>
+                            <Button Content="Кривая" Grid.Column="2"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderThickness="2" BorderBrush="Black" Width="350">
+                    <StackPanel>
+
+                        <Grid Grid.Row="1" Background="LightGray">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Название слоя -->
+                                <Label Content="Слой 2" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+                                <!-- Изображение -->
+                                <Image Source="/1.jpg" Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
+
+                                <!-- Кнопки -->
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <Button Width="30" Height="30">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="/lock.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="0,5,0,0">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="/eye.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Грфик" Grid.Column="0"/>
+                            <Button Content="Пикет" Grid.Column="1"/>
+                            <Button Content="Кривая" Grid.Column="2"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="2" BorderBrush="Black" Width="350">
+                    <StackPanel>
+
+                        <Grid Grid.Row="1" Background="LightGray">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Название слоя -->
+                                <Label Content="Слой 3" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+                                <!-- Изображение -->
+                                <Image Source="/1.jpg" Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
+
+                                <!-- Кнопки -->
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                                    <Button Width="30" Height="30">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="/lock.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Button Width="30" Height="30" Margin="0,5,0,0">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="/eye.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Грфик" Grid.Column="0"/>
+                            <Button Content="Пикет" Grid.Column="1"/>
+                            <Button Content="Кривая" Grid.Column="2"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+
+
+
+
+
+
+            </StackPanel>
+        </Grid>
+
+        <!-- Верхний блок -->
+        <Grid Grid.Column="1" Grid.Row="0" Background="LightCoral" Grid.ColumnSpan="2"/>
+
+        <!-- Центральный блок -->
+        <Grid Grid.Column="1" Grid.Row="1" Background="#FF5F5F5F" Margin="0,0,50,40" Grid.RowSpan="2"/>
+
+        <!-- Нижний блок -->
+        <Grid Grid.Column="1" Grid.Row="2" Background="Orange" Margin="0,10,50,0" Grid.RowSpan="2"/>
+    </Grid>
+
+</Window>
