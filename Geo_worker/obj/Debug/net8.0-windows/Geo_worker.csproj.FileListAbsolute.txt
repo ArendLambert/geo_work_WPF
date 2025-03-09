@@ -18,3 +18,26 @@ C:\Project_IT\Csh\2024(2)\Geo_worker\Geo_worker\obj\Debug\net8.0-windows\Geo_wor
 C:\Project_IT\Csh\2024(2)\Geo_worker\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.genruntimeconfig.cache
 C:\Project_IT\Csh\2024(2)\Geo_worker\Geo_worker\obj\Debug\net8.0-windows\ref\Geo_worker.dll
 C:\Project_IT\Csh\2024(2)\Geo_worker\Geo_worker\obj\Debug\net8.0-windows\Geo_worker_MarkupCompile.lref
+<<<<<<< HEAD
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\bin\Debug\net8.0-windows\Geo_worker.exe
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\bin\Debug\net8.0-windows\Geo_worker.deps.json
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\bin\Debug\net8.0-windows\Geo_worker.runtimeconfig.json
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\bin\Debug\net8.0-windows\Geo_worker.dll
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\bin\Debug\net8.0-windows\Geo_worker.pdb
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker_MarkupCompile.cache
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker_MarkupCompile.lref
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.g.resources
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.AssemblyInfoInputs.cache
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.AssemblyInfo.cs
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.csproj.CoreCompileInputs.cache
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.dll
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\refint\Geo_worker.dll
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.pdb
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\Geo_worker.genruntimeconfig.cache
+C:\Users\79069\Desktop\geo_work_WPF-master\Geo_worker\obj\Debug\net8.0-windows\ref\Geo_worker.dll
+=======
+>>>>>>> 446a9864e969d2a818631cd2510e72d45d7f105d
