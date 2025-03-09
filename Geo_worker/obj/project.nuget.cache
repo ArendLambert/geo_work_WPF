@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "7tDPWxK/jrw=",
   "success": true,
   "projectFilePath": "C:\\Users\\79069\\Desktop\\geo_work_WPF-master\\Geo_worker\\Geo_worker.csproj",
+=======
+  "dgSpecHash": "pzV6TjQvSGc=",
+  "success": true,
+  "projectFilePath": "C:\\Project_IT\\Csh\\2024(2)\\Geo_worker\\Geo_worker\\Geo_worker.csproj",
+>>>>>>> 446a9864e969d2a818631cd2510e72d45d7f105d
   "expectedPackageFiles": [],
   "logs": []
 }

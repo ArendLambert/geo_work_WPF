@@ -149,7 +149,11 @@
 
 
         <!-- Правый блок (на всю высоту) -->
+<<<<<<< HEAD
         <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="LightGreen" Margin="0, 0,0,0">
+=======
+        <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="LightGreen">
+>>>>>>> 446a9864e969d2a818631cd2510e72d45d7f105d
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Width="350">
                 <!-- Первая группа кнопок -->
                 <Grid Grid.Row="0" Background="White">
@@ -196,6 +200,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
 
                 <Border BorderThickness="2" BorderBrush="Black" Width="350">
                     <StackPanel>
+<<<<<<< HEAD
 
                         <Grid Grid.Row="1" Background="LightGray">
                             <Grid Margin="10">
@@ -227,6 +232,39 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
                             </Grid>
 
                         </Grid>
+=======
+                        
+                    <Grid Grid.Row="1" Background="LightGray">
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Название слоя -->
+                        <Label Content="Слой 1" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+                        <!-- Изображение -->
+                        <Image Source="/1.jpg" Height="70" Width="120" Grid.Column="1" HorizontalAlignment="Center"/>
+
+                        <!-- Кнопки -->
+                        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                            <Button Width="30" Height="30">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/lock.png"/>
+                                </Button.Background>
+                            </Button>
+                            <Button Width="30" Height="30" Margin="0,5,0,0">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/eye.png"/>
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                        
+                </Grid>
+>>>>>>> 446a9864e969d2a818631cd2510e72d45d7f105d
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="1*"/>
@@ -344,6 +382,7 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
         </Grid>
 
         <!-- Верхний блок -->
+<<<<<<< HEAD
         <Grid Grid.Column="1" Grid.Row="0" Background="LightCoral" Grid.ColumnSpan="2" Height="50">
             <StackPanel>
                 <TextBox Text="Площадь 1" FontSize="14" Height="18"/>
@@ -433,6 +472,15 @@ x:Name="SearchTermTextBox2" SpellCheck.IsEnabled="True" Language="ru-ru" Height=
             </ScrollViewer>
 
         </Grid>
+=======
+        <Grid Grid.Column="1" Grid.Row="0" Background="LightCoral" Grid.ColumnSpan="2"/>
+
+        <!-- Центральный блок -->
+        <Grid Grid.Column="1" Grid.Row="1" Background="#FF5F5F5F" Margin="0,0,50,40" Grid.RowSpan="2"/>
+
+        <!-- Нижний блок -->
+        <Grid Grid.Column="1" Grid.Row="2" Background="Orange" Margin="0,10,50,0" Grid.RowSpan="2"/>
+>>>>>>> 446a9864e969d2a818631cd2510e72d45d7f105d
     </Grid>
 
 </Window>
